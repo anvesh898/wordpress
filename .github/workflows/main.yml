@@ -13,8 +13,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         
-      - name: Create Report Directory
-        run: mkdir -p /zap/wrk/
+      - name: Set up permissions
+        run: |
+          sudo chmod -R 777 $(pwd)
 
       - name: Run OWASP ZAP Scan
         run: |
