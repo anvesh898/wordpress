@@ -7,7 +7,7 @@ on:
 
 jobs:
   zap_scan:
-    runs-on: centos-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
