@@ -14,16 +14,16 @@ use Aws\Exception\AwsException;
 $SesClient = new SesClient([
     'profile' => 'default',
     'version' => '2010-12-01',
-    'region'  => 'us-west-2'
+    'region'  => 'us-east-1'
 ]);
 
 // Replace sender@example.com with your "From" address.
 // This address must be verified with Amazon SES.
-$sender_email = 'sender@example.com';
+$sender_email = 'rijomathew@focaloid.com';
 
 // Replace these sample addresses with the addresses of your recipients. If
 // your account is still in the sandbox, these addresses must be verified.
-$recipient_emails = ['recipient1@example.com','recipient2@example.com'];
+$recipient_emails = ['mail@cloud443.in','recipient2@example.com'];
 
 // Specify a configuration set. If you do not want to use a configuration
 // set, comment the following variable, and the
